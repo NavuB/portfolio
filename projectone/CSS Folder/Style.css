@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@700&family=Playfair+Display:wght@700&display=swap');
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1b23;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* Header Navigation */
+header {
+    background: #12131a;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e63946;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #e63946;
+}
+
+/* Sections */
+.section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 20px auto;
+    background-color: #f0f0f0;
+    max-width: 1200px;
+}
+
+
+
+/* Home Section */
+#home {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+    align-items: flex-end;
+    padding: 0 80px 50px; 
+    color: white;
+}
+
+
+.name {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Monopoly';
+    color: #e63946;
+    text-align: center; 
+}
+
+.profession {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    text-align: center; 
+}
+
+
+#about-me {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px 10%;
+}
+
+#about-me::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.about-text {
+    width: 60%;
+    padding-right: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h1 span {
+    color: #e63946;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.about-image {
+    width: 40%;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+
+
+#services {
+    background: #1a1a2e;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service {
+    background: #16213e;
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.service:hover {
+    background: #0f3460;
+}
+
+.service i {
+    font-size: 40px;
+    color: #e63946;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #d3d3d3;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    background: #12131a;
+    text-align: center;
+    padding: 15px;
+}
